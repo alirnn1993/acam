@@ -1,0 +1,183 @@
+@import "main.module.scss";
+
+
+@media only screen and (min-width: 900px) {
+  .link:hover {
+    transform: scale(1.1, 1.1) !important;
+
+    & img {
+      transform: scale(1, 1);
+
+      transition: 0.5s;
+    }
+  }
+  .card {
+    flex-direction: column;
+    height: 482px;
+  }
+  .img {
+    height: 300px !important;
+  }
+  .priceContainer {
+    margin-top: 25px;
+  }
+  .cardContent {
+    padding-top: 5px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    flex-direction: row;
+    height: 180px !important;
+
+  }
+  .img {
+    //height: 180px !important;
+  }
+  .priceContainer {
+    margin-top: 5px;
+    margin-right: 16px;
+
+    & p {
+      margin-top: 5px;
+    }
+  }
+}
+
+.link {
+  padding: 4px 8px 4px 8px !important;
+
+  & img {
+    transition: 0.5s;
+    object-fit: cover;
+  }
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 1px;
+  width: 100%;
+  margin-top: 8px;
+
+  & p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15px;
+
+    & svg {
+      align-self: center;
+      margin-left: 5px;
+    }
+  }
+}
+
+.price {
+  margin-top: 5px !important;
+}
+
+.priceContainer {
+  height: auto;
+}
+
+.card {
+  display: flex;
+  border-radius: 15px !important;
+
+  & > div:first-child {
+    position: relative;
+    flex: 40% 1;
+  }
+
+  & .titleContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    background: linear-gradient(
+                    0deg, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, .001));
+    padding: 0 8px;
+    color: #fff !important;
+
+    & p {
+      height: 28px !important;
+      line-height: 28px !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+    }
+  }
+
+  & .statusContainer {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+
+}
+
+
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  flex: 60%;
+  max-width: 60%;
+
+  & h6 {
+    //margin-top: 10px;
+  }
+
+}
+
+.img {
+  width: calc(100% - 40px) !important;
+  //flex: 40%;
+  object-fit: cover;
+  padding: 20px;
+
+}
+
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 40%;
+
+  & div {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.bookmarkBtnContainer {
+  position: absolute;
+  right: calc(40% - 40px);
+  top: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5));
+  border-radius: 0% 0 65% 0%;
+}
+
+
+.cardContent {
+  flex: 1 0 auto;
+  position: relative;
+  padding-top: 8px !important;
+
+}
+
+.wrapper {
+  position: relative;
+  height: 180px;
+  width: 100%;
+
+
+}

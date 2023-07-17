@@ -1,0 +1,164 @@
+@import "main.module.scss";
+
+$textFieldMarginTop: 15px;
+$buttonMarginTop: 20px;
+.container {
+  //background-color: $background1;
+}
+
+.formContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.bannerContainer {
+  height: 100vh;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  //background-color: #1976d2;
+  background-image: url("../img/background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & div {
+    width: 50%;
+  }
+
+  & h3 {
+    color: #fff;
+    text-align: center;
+  }
+
+  & img {
+    width: 50%;
+    //height: 100%;
+    object-fit: cover;
+
+  }
+}
+
+.form {
+  //box-shadow: $boxShadow;
+  padding: 80px 70px;
+  //background-color: $background2;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card {
+
+
+  ////box-shadow: $boxShadow;
+  //padding: 80px 70px;
+  ////background-color: $background2;
+  //border-radius: 6px;
+  //overflow: hidden;
+}
+
+.snackBarContainer {
+  height: 100%;
+  width: 100%;
+
+  & > div {
+    height: 100% !important;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    & > div:nth-child(2) {
+      margin-right: 10px !important;
+    }
+  }
+
+  & span {
+    margin-top: -10px !important;
+  }
+}
+
+.linkContainer {
+  margin-top: $textFieldMarginTop;
+  margin-bottom: $textFieldMarginTop;
+
+  & > a {
+    //color: $color;
+    text-decoration: none;
+  }
+
+  & > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.snackBar {
+  width: 20%;
+  height: 70px !important;
+
+  & > div {
+    & > div:nth-child(3) {
+      margin-right: 8px;
+    }
+
+    & > div:nth-child(2) {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .form {
+    padding: 20px 30px;
+  }
+
+  .bannerContainer {
+    display: none;
+  }
+
+  .snackBar {
+    width: 80%;
+  }
+}
+
+.btn {
+  margin-top: 20px !important;
+}
+
+.textField {
+  margin-top: 15px !important;
+
+  & input {
+    direction: ltr !important;
+  }
+}
+
+.captchaContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 15px !important;
+
+  .captchaInput {
+    margin-left: 20px;
+  }
+
+  .captchaImg {
+    border-radius: 5px;
+  }
+
+  .refreshBtn {
+    margin: 2px;
+  }
+}

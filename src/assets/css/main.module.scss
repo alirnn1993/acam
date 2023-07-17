@@ -1,0 +1,66 @@
+//* {
+//  direction: rtl;
+//  text-align: right;
+//}
+
+
+a {
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  & > div{
+  }
+}
+
+.link2 {
+  text-decoration: none;
+  cursor: pointer;
+  color: #1890ff;
+}
+
+.leftToRight {
+  & input {
+    direction: ltr !important;
+  }
+}
+
+.inputContainer {
+  width: 95%;
+  margin: 10px 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ltrTextField {
+  & input {
+    direction: ltr !important;
+  }
+}
+
+
+@font-face {
+  font-family: myFirstFont2;
+  src: url('../fonts/iran.woff2');
+}
+
+label, p, span, pre, button, a, li {
+  font-family: myFirstFont2 ;
+}
+
+text {
+  font-family: myFirstFont2 !important;
+}
+
+legend {
+  font-family: myFirstFont2 !important;
+}
+
+h6, h5, h4, h3, h2, h1 {
+  font-family: myFirstFont2 !important;
+
+}

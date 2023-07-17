@@ -1,0 +1,20 @@
+@import "main.module.scss";
+
+.btnContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  & button{
+    margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .btnContainer{
+    flex-flow: column;
+    & button{
+      margin: 5px !important;
+    }
+  }
+}

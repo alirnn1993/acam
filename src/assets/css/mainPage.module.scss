@@ -1,0 +1,311 @@
+@import "main.module.scss";
+
+.inputContainer {
+  width: 95%;
+  margin: 10px 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuIconContainer {
+  min-width: unset !important;
+  margin-left: 5px;
+  color: #4a5d69;
+}
+
+.menuTextContainer {
+  text-align: left;
+  //color: hsla(0, 0%, 100%, .8);
+  color: rgba(0, 0, 0, 0.54);
+  margin-left: 10px;
+}
+
+.menuItem:hover {
+  //background-color: #0288d1;
+  //border-radius: 50px 0 0 50px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  & .menuTextContainer {
+    color: rgb(226, 96, 36) !important;
+
+  }
+
+  & .menuIconContainer {
+    color: rgb(226, 96, 36) !important;
+  }
+}
+
+.activeMenuItem {
+  //background-color: #29b6f6;
+  //border-radius: 50px 0 0 50px;
+  //transition: 0.5s;
+  //background: rgba(251, 133, 00, 0.5);
+  border-radius: 5px;
+
+  & svg {
+    color: rgb(218, 110, 0) !important;
+  }
+
+  //&::before {
+  //  content: " ";
+  //  position: absolute;
+  //  height: 6px;
+  //  width: 6px;
+  //  top: 18px;
+  //  left: -4px;
+  //  background: #fff;
+  //  border-radius: 50%;
+  //}
+
+  & .menuTextContainer {
+    color: #fff !important;
+  }
+
+  & .menuIconContainer {
+    color: #fff !important;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 5px;
+
+  & > div {
+    width: fit-content;
+
+    & > svg {
+      color: #bdbdbd;
+      width: 2em;
+      height: 2em;
+    }
+  }
+}
+
+.menuContainer {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+
+  left: 0;
+  bottom: 0;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+
+  & > div {
+    background: #455A64;
+    border-radius: 0 0 5px 0;
+
+    & > div:first-child {
+      margin: 25px 5px 0 5px;
+      padding: 28px 10px 3px 9px;
+      display: flex;
+      justify-content: center;
+      //border-bottom: 1px solid rgb(240, 242, 245);
+
+      & img {
+        width: 48px;
+      }
+    }
+
+    & > div:nth-child(2) {
+      height: fit-content;
+      //box-shadow: 0 2px 22px 0 rgba(0, 0, 0, .1), 0 4px 20px 0 rgba(0, 0, 0, .15);
+
+      //background: linear-gradient(0deg, #3358f4, #1d8cf8);
+      padding: 0 15px 15px;
+      margin: 0 5px 8px 0;
+
+    }
+  }
+
+
+  & nav {
+    //direction: rtl !important;
+  }
+
+  & span {
+    font-size: 0.75rem;
+  }
+}
+
+.profileBtn {
+  width: 100%;
+  border: 0 none;
+  border-radius: 6px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.subMenuContainer {
+  width: 85%;
+  margin-right: 10% !important;
+}
+
+.contents {
+
+  padding: 45px 10px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: calc(100vh - 80px);
+
+}
+
+.barInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+
+  & > div:first-child {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
+  .appBar {
+    //display: none !important;
+    & .btn {
+      display: none;
+    }
+  }
+  .menuContainer {
+    right: 96%;
+  }
+  .barInfo {
+    & > div:first-child {
+      width: 9%;
+    }
+  }
+  .contents {
+    left: 0;
+
+    & > div {
+      width: 96%;
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+  .appBar {
+    //display: none !important;
+    & .btn {
+      display: block;
+    }
+  }
+  .menuContainer {
+    right: 94%;
+  }
+  .barInfo {
+    & > div:first-child {
+      width: 13%;
+    }
+  }
+  .contents {
+    right: 0 !important;
+    top: 64px !important;
+  }
+  .contents {
+    left: 0;
+
+    & > div {
+      width: 94%;
+
+    }
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .appBar {
+    //display: none !important;
+    & .btn {
+      display: block;
+    }
+  }
+  .menuContainer {
+    right: 90%;
+  }
+  .barInfo {
+    & > div:first-child {
+      width: 21%;
+    }
+  }
+  .contents {
+    right: 0 !important;
+    top: 64px !important;
+  }
+  .contents {
+    left: 0;
+
+    & > div {
+      width: 90%;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1200px) {
+  .appBar {
+    //display: none !important;
+    & .btn {
+      display: block;
+    }
+  }
+  .menuContainer {
+    right: 95%;
+  }
+  .contents {
+    right: 0 !important;
+    top: 64px !important;
+  }
+  .contents {
+    left: 0;
+
+    & > div {
+      width: 95%;
+
+    }
+  }
+
+}
+
+.appBar {
+  position: fixed !important;
+  z-index: 12;
+  //direction: rtl !important;
+  height: 40px;
+  background: #CFD8DC !important;
+  top: 0;
+
+
+  & > div {
+    min-height: 20px;
+  }
+
+  min-height: 20px;
+
+  & .btn {
+    height: auto;
+  }
+
+  & .div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    & img {
+      max-width: 200px;
+    }
+  }
+}

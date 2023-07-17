@@ -1,0 +1,67 @@
+@import "main.module.scss";
+
+
+.progressContainer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.adContainer {
+  width: 100% !important;
+  //margin-bottom: 70px !important;
+  margin: 0 0 70px 0 !important;
+  padding: 0 !important;
+}
+
+.paginationContainer {
+  display: flex;
+  direction: ltr;
+  justify-content: center;
+  margin-top: 30px;
+
+  & ul{
+    direction: ltr !important;
+  }
+}
+
+.scrollbarDisplayNone {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbarDisplayNone::-webkit-scrollbar {
+  display: none;
+}
+
+.filterBtn {
+  position: fixed !important;
+  bottom: 20px;
+  right: 20px;
+}
+
+.tabPanel1 {
+  padding: 0 !important;
+
+  & > div {
+    padding: 0 !important;
+  }
+}
+
+.wrapper {
+  margin-top: 55px !important;
+}
+
+
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  & button{
+    flex-grow: 1 ;
+    margin: 0 5px 0 5px;
+  }
+}

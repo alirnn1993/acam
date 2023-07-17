@@ -1,0 +1,19 @@
+<svg _ngcontent-Kilid-Portal-c64="" xmlns="http://www.w3.org/2000/svg" width="53.615" height="127.301"
+     viewBox="0 0 53.615 127.301">
+    <defs _ngcontent-Kilid-Portal-c64="">
+        <filter _ngcontent-Kilid-Portal-c64="" id="Path_5524" x="0" y="0" width="53.615" height="127.301"
+                filterUnits="userSpaceOnUse">
+            <feOffset _ngcontent-Kilid-Portal-c64="" dy="3" input="SourceAlpha"></feOffset>
+            <feGaussianBlur _ngcontent-Kilid-Portal-c64="" stdDeviation="3" result="blur"></feGaussianBlur>
+            <feFlood _ngcontent-Kilid-Portal-c64="" flood-opacity="0.161"></feFlood>
+            <feComposite _ngcontent-Kilid-Portal-c64="" operator="in" in2="blur"></feComposite>
+            <feComposite _ngcontent-Kilid-Portal-c64="" in="SourceGraphic"></feComposite>
+        </filter>
+    </defs>
+    <g _ngcontent-Kilid-Portal-c64="" id="Group_3513" data-name="Group 3513" transform="translate(9 6)">
+
+        <path _ngcontent-Kilid-Portal-c64="" id="star_1_" data-name="star (1)" fill="#f3c504"
+              d="M9.277,1.555l1.388,4.487a.911.911,0,0,0,.686.5h4.788a.911.911,0,0,1,.505,1.554l-3.936,2.713a.911.911,0,0,0-.262.806l1.577,4.547a.911.911,0,0,1-1.322.961L9.028,14.463a.912.912,0,0,0-.848,0L4.22,17.121A.911.911,0,0,1,2.9,16.16L4.22,11.614a.911.911,0,0,0-.262-.806L.277,8.094A.911.911,0,0,1,.782,6.54L5.362,6.2a.911.911,0,0,0,.686-.5l1.6-4.142A.911.911,0,0,1,9.277,1.555Z"
+              transform="translate(8.904 45.697)" class="cls-2"></path>
+    </g>
+</svg>

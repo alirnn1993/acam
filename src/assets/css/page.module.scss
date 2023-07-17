@@ -1,0 +1,55 @@
+@import "main.module";
+
+.bottomBar{
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  & > div{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  & nav{
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    & ul{
+      direction: ltr;
+    }
+  }
+}
+
+.inputContainer {
+  width: 95%;
+  margin: 10px 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filterBtn {
+  position: fixed !important;
+  bottom: 20px;
+  left: 20px;
+}
+
+.table{
+  position: absolute;
+  overflow: auto;
+  top:50px;
+  left: 0;
+  right: 0;
+
+
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}

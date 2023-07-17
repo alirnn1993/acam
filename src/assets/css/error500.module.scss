@@ -1,0 +1,70 @@
+@import "main.module.scss";
+
+.first {
+  background: rgba(0, 0, 0, 0) linear-gradient(100.66deg, rgb(43, 48, 77) 6.56%, rgb(68, 74, 107) 93.57%) repeat scroll 0% 0%;
+  height: 100vh;
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & > h4 {
+        color: rgb(35, 42, 46);
+        text-align: center;
+      }
+
+      & > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        & > button {
+          width: 30%;
+          margin-top: 25px;
+
+          & a{
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.second {
+  background-color: #141c23;
+  height: 100vh;
+
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        & > button {
+          margin-top: 25px;
+          width: 30%;
+        }
+      }
+    }
+  }
+}

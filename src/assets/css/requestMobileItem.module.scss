@@ -1,0 +1,54 @@
+@import "main.module.scss";
+
+.card {
+  border-radius: 15px !important;
+  min-height: 20px;
+  padding: 10px;
+
+  & > div:first-child {
+    display: flex;
+    flex-direction: row;
+
+    & > div:first-child {
+      width: 40%;
+    }
+
+    & > div:nth-child(2) {
+      width: 60%;
+      position: relative;
+
+      & > p {
+        text-align: left
+      }
+    }
+  }
+
+  & > div:nth-child(2),  & > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+
+}
+
+.wrapper {
+  position: relative;
+  min-height: 180px;
+  width: 100%;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  //position: absolute;
+  //bottom: 0;
+  //left: 0;
+  //right: 40%;
+
+  & div {
+    flex-grow: 1;
+    text-align: center;
+  }
+}

@@ -1,0 +1,243 @@
+@import "main.module.scss";
+//@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.wrapper {
+  margin-top: 60px !important;
+  width: 100% !important;
+  margin-right: 0 !important;
+
+  & .breadcrumbsContainer {
+    height: 30px;
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  & .lineContainer {
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .line {
+
+      display: flex;
+      flex-direction: row;
+
+      & p:first-child {
+        flex: 1;
+        align-self: center;
+      }
+
+      & p:nth-child(2) {
+        text-align: left;
+        align-self: center;
+      }
+    }
+  }
+
+}
+
+
+.btnContainer {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & div:first-child {
+    display: flex;
+
+    & p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  & div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.backBtnContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 80px;
+
+  & a {
+    display: flex;
+    flex-direction: row;
+
+    & p, & svg {
+      align-self: center;
+    }
+  }
+
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1px;
+  //margin-bottom: 10px;
+  width: 100%;
+  padding-top: 5px;
+
+  & p {
+    align-self: center;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+    flex: 1;
+
+    & span {
+      font-size: 0.75rem !important;
+    }
+
+  }
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1px;
+  width: 100%;
+
+  & p {
+    align-self: start;
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center !important;
+
+  }
+
+  & ul {
+    list-style: none;
+
+    & li::before {
+      content: "\2022";
+      color: #1976d2;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+
+.gridContainer {
+  width: 100% !important;
+  margin: 0 !important;
+
+  & > div {
+  }
+}
+
+.itemsContainer {
+  height: auto;
+}
+
+.sliderContainer {
+  height: auto;
+}
+
+.descriptionContainer {
+  height: auto;
+}
+
+.mapContainer {
+  height: auto;
+}
+
+.similarContainer {
+  height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .btnContainer1 {
+    justify-content: center;
+  }
+  .gridContainer {
+    & > div {
+      padding-right: 0 !important;
+    }
+  }
+  .box2 {
+    flex-direction: column;
+
+    & p {
+      width: calc(100% - 20px) !important;
+    }
+  }
+
+  .itemsContainer {
+    order: 1 !important;
+  }
+  .sliderContainer {
+    order: 0 !important;
+  }
+  .descriptionContainer {
+    order: 2 !important;
+  }
+  .mapContainer {
+    order: 3 !important;
+  }
+  .similarContainer {
+    order: 4 !important;
+  }
+  .dividerVertical {
+    display: block !important;
+  }
+}
+
+.card {
+  border-radius: 15px !important;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+
+  & span, &button {
+    align-self: center;
+  }
+}
+
+.divider {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin: 0;
+  flex-shrink: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-bottom-width: thin;
+}
+
+.btnContainer1 {
+  justify-content: start;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+}
+
+.dividerHorizontal {
+  display: none;
+}
+.adContainer {
+  width: 100% !important;
+  margin: 20px 0 0 0 !important;
+  padding: 0 !important;
+}

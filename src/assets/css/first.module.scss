@@ -1,0 +1,61 @@
+@import "main.module.scss";
+
+
+.container {
+  & > a:first-child {
+    & div:first-child {
+      width: 100%;
+      height: 50vh;
+      position: relative;
+
+      & > img:first-child {
+        width: 100%;
+        height: 100%;
+        //object-fit: cover;
+      }
+
+      & > img:nth-child(2){
+        position: absolute;
+        bottom: 3vh;
+        left: 0;
+        max-height: 80%;
+      }
+
+      & h6{
+        position: absolute;
+        color: #fff;
+        right: 7%;
+        bottom: 12vh;
+
+      }
+
+    }
+
+  }
+  & > a:nth-child(2) {
+    & div:first-child {
+      width: 100%;
+      height: 50vh;
+      position: relative;
+
+
+      & > img:first-child{
+        position: absolute;
+        bottom: 3vh;
+        right: 0;
+        max-height: 80%;
+
+      }
+      & h6{
+        position: absolute;
+        left: 7%;
+        top: 5vh;
+
+      }
+
+    }
+
+  }
+
+
+}

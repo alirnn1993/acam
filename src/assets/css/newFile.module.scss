@@ -1,0 +1,53 @@
+@import "main.module.scss";
+
+.container {
+  //width: 80%;
+  margin: auto;
+  //background-color: $background2;
+  //box-shadow: rgb(117, 124, 130) 0 0 2px;
+  //transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 6px;
+  padding: 10px;
+  overflow-y: visible !important;
+}
+
+.inputContainer {
+  width: 95%;
+  margin: 10px 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  height: 100%;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  padding: 10px;
+}
+
+
+.videoContainer {
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.videoBannerContainer {
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: 240px;
+  }
+}
+
+
+.container1{
+  width: 90%;
+  margin: auto;
+  padding-top: 35px;
+}
