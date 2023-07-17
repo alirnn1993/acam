@@ -1,0 +1,74 @@
+{
+  "camera": {
+    "base": "api/camera",
+    "data": ""
+  },
+  "province": "api/province",
+  "live": "api/live",
+  "send": "api/send",
+  "isDemo": true,
+  "hasPort": false,
+  "port": 8000,
+  "server": {
+    "Api": "http://178.131.20.51:8000",
+    "Api3": "http://192.168.1.206:8000",
+    "Api2": "http://127.0.0.1:8000",
+    "Api4": "http://192.168.1.52:8000",
+    "Api1": "https://acam.tec-nikan.com/backend/public",
+    "Storage": "http://178.131.20.51:9697/vehicle"
+  },
+  "monitor": {
+    "base": "api/monitor",
+    "uptime": "api/monitor/uptime",
+    "network": "api/monitor/network",
+    "time": "api/monitor/time"
+  },
+  "user": {
+    "login": "api/auth/login",
+    "check": "auth/check-sms-code",
+    "refresh": "api/auth/check",
+    "logout": "api/auth/logout",
+    "user": "api/users",
+    "update": "api/user",
+    "activate": "api/users/activate",
+    "deactivate": "api/users/deactivate"
+  },
+  "plate": {
+    "base": "api/plates"
+  },
+  "command": {
+    "hardReboot": "api/command/hard-reboot",
+
+    "restartANPR": "api/command/restart-anpr",
+    "eraseImages": "api/command/erase-images",
+    "shutdown": "api/command/shutdown"
+
+  },
+  "setting": {
+    "system": "api/setting/system",
+    "time": "api/setting/time",
+    "tcpIpConfiguration": "api/setting/tcp-ip",
+    "ftpServer": "api/setting/ftp-server",
+    "led": "api/setting/led",
+    "temperature": "api/setting/temperature",
+    "get": "api/setting"
+  },
+  "report": {
+    "base": "api/report",
+    "routine": "api/report/routine",
+    "export": "api/report/export"
+  },
+  "requestHeader": {
+    "withCredentials": false,
+    "Access-Control-Allow-Origin": "*",
+    "crossdomain": true,
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+  },
+  "requestHeader2": {
+    "Accept": "application/json"
+  },
+  "getImages": "api/vehicle",
+  "roi": "api/roi",
+  "log": "api/log"
+}
